@@ -13,7 +13,7 @@ interface HexGridProps {
 
 const HEX_SIZE = 100;
 const COLUMN_OFFSET = 1.48;
-const ROW_OFFSET = 0.43;
+const ROW_OFFSET = 0.4275;
 const ODD_OFFSET = 0.74;
 
 export const HexGrid: FunctionComponent<HexGridProps> = (
