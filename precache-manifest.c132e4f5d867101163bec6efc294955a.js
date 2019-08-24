@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "042258c01e12203c488749eac0d3dc29",
+    "revision": "79e205c0712718e5b52f1b65e9af2189",
     "url": "/fringe-map/index.html"
   },
   {
-    "revision": "cbfbc3768848b0516a93",
+    "revision": "0050b77b0672946c4e31",
     "url": "/fringe-map/static/css/main.7a0c9d66.chunk.css"
   },
   {
-    "revision": "d1b2ed79ca6736eb799c",
-    "url": "/fringe-map/static/js/2.73ae6778.chunk.js"
+    "revision": "a937eaf58143d97c8f10",
+    "url": "/fringe-map/static/js/2.77bb179e.chunk.js"
   },
   {
-    "revision": "cbfbc3768848b0516a93",
-    "url": "/fringe-map/static/js/main.a46b284b.chunk.js"
+    "revision": "0050b77b0672946c4e31",
+    "url": "/fringe-map/static/js/main.f0883a7d.chunk.js"
   },
   {
     "revision": "1c5c86a803dd637ae5cb",
