@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fringe-map/static/css/main.7a0c9d66.chunk.css",
-    "main.js": "/fringe-map/static/js/main.f0883a7d.chunk.js",
-    "main.js.map": "/fringe-map/static/js/main.f0883a7d.chunk.js.map",
+    "main.js": "/fringe-map/static/js/main.10291efd.chunk.js",
+    "main.js.map": "/fringe-map/static/js/main.10291efd.chunk.js.map",
     "runtime~main.js": "/fringe-map/static/js/runtime~main.23dc5a60.js",
     "runtime~main.js.map": "/fringe-map/static/js/runtime~main.23dc5a60.js.map",
     "static/js/2.77bb179e.chunk.js": "/fringe-map/static/js/2.77bb179e.chunk.js",
     "static/js/2.77bb179e.chunk.js.map": "/fringe-map/static/js/2.77bb179e.chunk.js.map",
     "index.html": "/fringe-map/index.html",
-    "precache-manifest.c132e4f5d867101163bec6efc294955a.js": "/fringe-map/precache-manifest.c132e4f5d867101163bec6efc294955a.js",
+    "precache-manifest.4e6722a7d7b439fde3dfe258baf8392f.js": "/fringe-map/precache-manifest.4e6722a7d7b439fde3dfe258baf8392f.js",
     "service-worker.js": "/fringe-map/service-worker.js",
     "static/css/main.7a0c9d66.chunk.css.map": "/fringe-map/static/css/main.7a0c9d66.chunk.css.map"
   }
