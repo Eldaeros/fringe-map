@@ -12,7 +12,8 @@ const SvgHexagon = (props: React.SVGProps<SVGSVGElement>) => (
             stroke={props.stroke || "#000"}
             strokeWidth={props.strokeWidth || 4}
             d="M723 314L543 625.77H183L3 314 183 2.23h360L723 314z"
-            clip-path={"url(#clipPath)"}
+            clipPath={"url(#clipPath)"}
+            className="hex"
         />
     </svg>
 );
