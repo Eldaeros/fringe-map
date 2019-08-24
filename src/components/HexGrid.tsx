@@ -3,6 +3,10 @@ import styled from "styled-components";
 import SvgHexagon from "./svg/Hexagon";
 import data from "../data/sector.json";
 
+// Get types from JSON File
+type SectorData = typeof import("../data/sector.json");
+type SystemData = SectorData["systems"][0];
+
 const _ = require("lodash");
 
 interface HexGridProps {
@@ -63,7 +67,7 @@ interface HexagonProps {
     size: number;
     position: [number, number];
     hexText?: string;
-    data?: any;
+    data?: SystemData;
 }
 
 interface HexagonState {
@@ -127,10 +131,7 @@ const HexagonContainer = styled.div`
         color: ${(props: HexagonContainerProps) =>
             props.hover ? `#b5b5b5` : ``}
     }
-
 `;
-
-
 
 const CentreHex = styled.div`
     text-align: center;
