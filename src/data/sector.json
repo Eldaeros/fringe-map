@@ -1,15 +1,14 @@
 {
-    "systems": [
-        {
+	"systems": [
+		{
 			"name": "Alpha",
 			"location": "0404",
-            "attributes":
-                {
-                    "weath": 0,
-                    "crime": 0,
-                    "tech": 0,
-                    "wyrd": 0
-                },
+			"attributes": {
+				"weath": 0,
+				"crime": 0,
+				"tech": 0,
+				"wyrd": 0
+			},
 			"description": "",
 			"planets": [
 				{
@@ -19,6 +18,6 @@
 					"name": "Banner"
 				}
 			]
-        }
+		}
 	]
 }

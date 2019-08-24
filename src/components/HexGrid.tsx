@@ -42,9 +42,9 @@ export const HexGrid: FunctionComponent<HexGridProps> = (
             const rowOffset = rowIndex % 2 ? ODD_OFFSET * HEX_SIZE : 0;
             gridLayout.push(
                 <Hexagon
-                    key={`hex-${yGridCoord}-${xGridCoord}`}
-                    data-hex-text={`hex-${yGridCoord}-${xGridCoord}`}
-                    hexText={`${yGridCoord}${xGridCoord}`}
+                    key={`hex-${xGridCoord}-${yGridCoord}`}
+                    data-hex-text={`hex-${xGridCoord}-${yGridCoord}`}
+                    hexText={`${xGridCoord}${yGridCoord}`}
                     size={HEX_SIZE}
                     position={[
                         colIndex * HEX_SIZE * COLUMN_OFFSET + rowOffset,
