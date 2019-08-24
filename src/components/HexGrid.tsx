@@ -1,6 +1,7 @@
 import React, { FunctionComponent, Component } from "react";
 import styled from "styled-components";
 import SvgHexagon from "./svg/Hexagon";
+import data from "../data/sector.json";
 
 const _ = require("lodash");
 
@@ -32,6 +33,11 @@ export const HexGrid: FunctionComponent<HexGridProps> = (
             );
             const yGridCoord = _.padStart(Math.floor(rowIndex / 2) + 1, 2, "0");
 
+            const gridCoordString = `${yGridCoord}${xGridCoord}`;
+            const hexData = data.systems.filter(node => {
+                return node.location === gridCoordString;
+            })[0];
+
             // Odd Rows are offset by 75%
             const rowOffset = rowIndex % 2 ? ODD_OFFSET * HEX_SIZE : 0;
             gridLayout.push(
@@ -44,22 +50,20 @@ export const HexGrid: FunctionComponent<HexGridProps> = (
                         colIndex * HEX_SIZE * COLUMN_OFFSET + rowOffset,
                         rowIndex * HEX_SIZE * ROW_OFFSET,
                     ]}
+                    data={hexData}
                 />,
             );
         }
     }
 
-    return (
-        <>
-            {gridLayout}
-        </>
-    );
+    return <>{gridLayout}</>;
 };
 
 interface HexagonProps {
     size: number;
     position: [number, number];
     hexText?: string;
+    data?: any;
 }
 
 interface HexagonState {
@@ -83,7 +87,15 @@ export class Hexagon extends Component<HexagonProps, HexagonState> {
                 onMouseLeave={this._toggleHover}
                 hover={this.state.hover}
             >
-                <HexLabel size={this.props.size}>{this.props.hexText}</HexLabel>
+                <HexCoord size={this.props.size}>{this.props.hexText}</HexCoord>
+                {this.props.data && (<>
+                    <HexName size={this.props.size}>
+                        {this.props.data.name}
+                    </HexName>
+                    <HexFooter size={this.props.size}>
+                        {_.padStart("", this.props.data.planets.length, "⬤")}
+                    </HexFooter></>
+                )}
                 <SvgHexagon
                     width={this.props.size}
                     height={this.props.size}
@@ -118,15 +130,34 @@ const HexagonContainer = styled.div`
 
 `;
 
+
+
+const CentreHex = styled.div`
+    text-align: center;
+    position: absolute;
+    width: 50px;
+    left: calc(50% - 50px / 2);
+    color: #626262;
+`
+
 interface HexLabelProps {
     size: number;
 }
-const HexLabel = styled.div`
-    position: relative;
-    top: ${(props: HexLabelProps) => props.size * 0.25}px;
-    text-align: center;
-    color: #626262;
+const HexCoord = styled(CentreHex)`
+    top: ${(props: HexLabelProps) => props.size * 0.1}px;
     font-family: roboto-mono, sans-serif;
     font-size: 12px;
     letter-spacing: -0.05em;
+`;
+
+const HexName = styled(CentreHex)`
+    top: ${(props: HexLabelProps) => props.size * 0.4}px;
+    font-family: roboto-condensed, sans-serif;
+    font-size: 14px;
+`
+
+const HexFooter = styled(CentreHex)`
+    top: ${(props: HexLabelProps) => props.size * 0.75}px;
+    font-family: roboto-mono, sans-serif;
+    font-size: 8px;
 `;
