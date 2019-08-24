@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/static/js/main.097f02a5.chunk.js",
-    "main.js.map": "/static/js/main.097f02a5.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.f7d4aae4.js",
-    "runtime~main.js.map": "/static/js/runtime~main.f7d4aae4.js.map",
-    "static/js/2.aa203a7d.chunk.js": "/static/js/2.aa203a7d.chunk.js",
-    "static/js/2.aa203a7d.chunk.js.map": "/static/js/2.aa203a7d.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.70b2849a54d065ae3fed28b230b81e7f.js": "/precache-manifest.70b2849a54d065ae3fed28b230b81e7f.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map"
+    "main.css": "/fringe-map/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/fringe-map/static/js/main.bfea184a.chunk.js",
+    "main.js.map": "/fringe-map/static/js/main.bfea184a.chunk.js.map",
+    "runtime~main.js": "/fringe-map/static/js/runtime~main.23dc5a60.js",
+    "runtime~main.js.map": "/fringe-map/static/js/runtime~main.23dc5a60.js.map",
+    "static/js/2.195c02b4.chunk.js": "/fringe-map/static/js/2.195c02b4.chunk.js",
+    "static/js/2.195c02b4.chunk.js.map": "/fringe-map/static/js/2.195c02b4.chunk.js.map",
+    "index.html": "/fringe-map/index.html",
+    "precache-manifest.070897a70298b497d120b020ce034286.js": "/fringe-map/precache-manifest.070897a70298b497d120b020ce034286.js",
+    "service-worker.js": "/fringe-map/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/fringe-map/static/css/main.5ecd60fb.chunk.css.map"
   }
 }
