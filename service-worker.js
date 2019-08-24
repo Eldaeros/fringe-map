@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fringe-map/precache-manifest.07d44b100fe537a53c01c3de1d91bfac.js"
+  "/fringe-map/precache-manifest.3cb09e8b56cccdfb7591e2b4410d85c8.js"
 );
 
 self.addEventListener('message', (event) => {
