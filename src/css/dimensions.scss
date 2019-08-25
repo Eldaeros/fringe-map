@@ -1,0 +1,9 @@
+
+$hex-stroke-width: 20;
+$hex-stroke-width-hover: 20;
+
+:export {
+    hexStrokeWidth: $hex-stroke-width;
+    hexStrokeWidthHover: $hex-stroke-width-hover;
+}
+

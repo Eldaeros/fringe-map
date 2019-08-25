@@ -1,23 +1,48 @@
 {
-	"systems": [
-		{
-			"name": "Alpha",
-			"location": "0404",
-			"attributes": {
-				"wealth": 0,
-				"crime": 0,
-				"tech": 0,
-				"wyrd": 0
-			},
-			"description": "",
-			"planets": [
-				{
-					"name": "Cosmo"
-				},
-				{
-					"name": "Banner"
-				}
-			]
-		}
-	]
+    "systems": [
+        {
+            "name": "Rin",
+            "location": "0203",
+            "planets": [
+                "Aleph",
+                "Baftoma",
+                "Vet"
+            ]
+        },
+        {
+            "name": "Holt",
+            "location": "0503",
+            "planets": [
+                "Vos",
+                "Mem",
+                "Sonhandra"
+            ]
+        },
+        {
+            "name": "Iota",
+            "location": "0305",
+            "planets": [
+                "Indri",
+                "Lithios",
+                "Amerath"
+            ]
+        },
+        {
+            "name": "Brekk",
+            "location": "0506",
+            "planets": [
+                "Nightfall",
+                "Aketi",
+                "Shimaya"
+            ]
+        },
+        {
+            "name": "Phyles",
+            "location": "0605",
+            "planets": [
+                "Ramistrad",
+                "Meliano"
+            ]
+        }
+    ]
 }

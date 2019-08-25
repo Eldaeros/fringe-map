@@ -1,0 +1,20 @@
+
+$background-color: #2d2d2d;
+
+$font-color: #626262;
+
+$hex-fill: #373737;
+$hex-stroke: $background-color;
+$hex-fill-hover: rgba(97, 144, 230, 0.25);
+$hex-stroke-hover: #6190e6;
+
+
+:export {
+    backgroundColor: $background-color;
+    fontColor: $font-color;
+    hexFill: $hex-fill;
+    hexStroke: $hex-stroke;
+    hexFillHover: $hex-fill-hover;
+    hexStrokeHover: $hex-stroke-hover;
+}
+
